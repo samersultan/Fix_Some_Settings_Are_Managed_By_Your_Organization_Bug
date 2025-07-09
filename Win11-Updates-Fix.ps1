@@ -10,8 +10,10 @@ if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 Checkpoint-Computer -Description "LocalGroupPolicy" -RestorePointType "MODIFY_SETTINGS"
 
 # Reset security policies
-defltbasePath = "$env:windir\inf\defltbase.inf"
+$defltbasePath = "$env:windir\inf\defltbase.inf"
 secedit /configure /cfg $defltbasePath /db defltbase.sdb /verbose
+
+# ...rest of your script...
 
 # Delete Group Policy folders
 Remove-Item -Path "$env:SystemRoot\System32\GroupPolicyUsers" -Recurse -Force -ErrorAction SilentlyContinue
