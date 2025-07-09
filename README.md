@@ -1,6 +1,4 @@
-Here’s a concise `README.md` for your script:
 
----
 
 # Fix Windows 11 "Some Settings Are Managed By Your Organization"
 
