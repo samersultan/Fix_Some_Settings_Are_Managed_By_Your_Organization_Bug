@@ -16,9 +16,7 @@ This PowerShell script resolves the **"Some settings are managed by your organiz
 
 ## Usage
 
-1. **Deploy** the script via NinjaOne or run it as an Administrator on the affected machine.
+1. **Deploy** the script via NinjaOne (or another RMM) / run it as an Administrator on the affected machine.
 2. **Note:** The script will automatically reboot the computer after execution.
 
----
-
-Let me know if you want it tailored further or need extra sections!
+=
